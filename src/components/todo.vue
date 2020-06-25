@@ -12,12 +12,14 @@
             >
         </div>
         <div class="scroll">
-            <item
-                    :todo="todo"
-                    v-for="todo in filteredTodos"
-                    :key="todo.id"
-                    @delete="deleteTodo"
-            />
+            <ol>
+                <li v-for="todo in filteredTodos" :key="todo.id">
+                    <item
+                        @delete="deleteTodo"
+                        :todo="todo"
+                    />
+                </li>
+            </ol>
         </div>
         <tabs
                 :filter="filter"
@@ -109,7 +111,8 @@
     .error {
         color: red;
         text-align: center;
-        padding 5 0 0 0;
+        padding-top: 10px
+
     }
 
     .scroll {

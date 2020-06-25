@@ -55,7 +55,7 @@
         justify-content space-between
         padding 5px 0
         line-height 30px
-        background-color #fff
+        background-color #84de86
         font-size 14px
         font-smoothing: antialiased
     }
@@ -90,7 +90,7 @@
             border 1px solid rgba(175, 47, 47, 0)
 
             &.isActive {
-                border-color rgba(175, 47, 47, 0.4)
+                border-color red
                 border-radius 5px
             }
         }
